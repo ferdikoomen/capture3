@@ -26,7 +26,7 @@ Although it could support other camera's, it only tested using a [Nikon D3300](h
 <img src="screenshots/screenshot-interface-full.png" alt="Full interface" width="625" height="180">
 <img align="left" src="screenshots/screenshot-panel-histogram.png" alt="Histogram panel" width="266" height="850">
 <img align="left" src="screenshots/screenshot-panel-graph.png" alt="3D color space panel" width="266" height="850">
-<img align="left" src="screenshots/screenshot-panel-waveform.png" alt="Waveform panel" width="266" height="850">
+<img src="screenshots/screenshot-panel-waveform.png" alt="Waveform panel" width="266" height="850">
 
 ## Requirements
 - [Qt 5.9](https://www.qt.io)
