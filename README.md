@@ -11,7 +11,7 @@ The main features are:
 5. **Color space visualizer:** Preview images in [RGB](https://en.wikipedia.org/wiki/RGB_color_space), [HSB](https://en.wikipedia.org/wiki/HSL_and_HSV), [XYZ](https://en.wikipedia.org/wiki/CIE_1931_color_space) and [LAB](https://en.wikipedia.org/wiki/Lab_color_space) color spaces, including [3D color space graphs](screenshots/screenshot-panel-graph.png).
 
 Capture3 is developed using [JetBrains CLion](https://www.jetbrains.com/clion/) and can be build on a Mac with macOS Sierra or higher.
-Although it could support other camera's, it only tested using a [Nikon D3300](http://imaging.nikon.com/lineup/dslr/d3300/) and [Sigma 35mm f/1.4 DG HSM Art](https://www.sigmaphoto.com/lenses/standard-lenses/35mm-f14-dg-hsm-a) lens.
+Although it could support other camera's, it's only tested using a [Nikon D3300](http://imaging.nikon.com/lineup/dslr/d3300/) and [Sigma 35mm f/1.4 DG HSM Art](https://www.sigmaphoto.com/lenses/standard-lenses/35mm-f14-dg-hsm-a) lens.
 
 ## Learn more
 - [Qt5](https://www.qt.io) → Application framework used to create the GUI
