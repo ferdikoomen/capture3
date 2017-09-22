@@ -1,0 +1,30 @@
+Capture3--PanelTabComponent QLineEdit {
+	min-height: 20px;
+	max-height: 20px;
+	max-width: 140px;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 5px;
+	font-size: $font-size;
+	font-weight: normal;
+	color: $color-component-normal-text;
+	border: 1px solid $color-component-normal-border;
+	border-radius: 0px;
+	background-color: $color-component-normal-background;
+	selection-color: $color-component-selection-text;
+	selection-background-color: $color-component-selection-background;
+}
+
+Capture3--PanelTabComponent QLineEdit:hover {
+	outline: none;
+	color: $color-component-hover-text;
+	border: 1px solid $color-component-hover-border;
+	background-color: $color-component-hover-background;
+}
+
+Capture3--PanelTabComponent QLineEdit:focus {
+	outline: none;
+	color: $color-component-focus-text;
+	border: 1px solid $color-component-focus-border;
+	background-color: $color-component-focus-background;
+}

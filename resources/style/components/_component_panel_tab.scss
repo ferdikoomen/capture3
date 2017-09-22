@@ -1,0 +1,8 @@
+Capture3--PanelTabComponent,
+Capture3--PanelTabComponent QWidget#content {
+	margin: 0px;
+	padding: 0px;
+	border: 3px solid $color-tab-selected-background;
+	border-top: 4px solid $color-tab-selected-background;
+	background-color: $color-tab-selected-background;
+}

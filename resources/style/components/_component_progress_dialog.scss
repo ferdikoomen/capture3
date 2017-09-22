@@ -1,0 +1,17 @@
+Capture3--PogressDialogComponent {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	background-color: $color-component-normal-background;
+
+	> QProgressBar {
+		border: 2px solid grey;
+		border-radius: 5px;
+		text-align: center;
+	}
+
+	> QProgressBar::chunk {
+		background-color: #FF0000;
+		width: 20px;
+	}
+}

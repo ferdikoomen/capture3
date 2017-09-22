@@ -1,0 +1,84 @@
+Capture3--PanelTabComponent QComboBox {
+	min-height: 20px;
+	max-height: 20px;
+	max-width: 140px;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 5px;
+	font-size: $font-size;
+	font-weight: normal;
+	color: $color-component-normal-text;
+	border: 1px solid $color-component-normal-border;
+	border-radius: 0px;
+	background-color: $color-component-normal-background;
+}
+
+Capture3--PanelTabComponent QComboBox:hover {
+	outline: none;
+	color: $color-component-hover-text;
+	border: 1px solid $color-component-hover-border;
+	background-color: $color-component-hover-background;
+}
+
+Capture3--PanelTabComponent QComboBox:focus {
+	outline: none;
+	color: $color-component-focus-text;
+	border: 1px solid $color-component-focus-border;
+	background-color: $color-component-focus-background;
+}
+
+Capture3--PanelTabComponent QComboBox::drop-down {
+	width: 20px;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	border-radius: 0px;
+	background-color: transparent;
+}
+
+Capture3--PanelTabComponent QComboBox::down-arrow {
+	image: url(":/gfx/arrow_normal.png");
+}
+
+Capture3--PanelTabComponent QComboBox::down-arrow:focus {
+	image: url(":/gfx/arrow_focus.png");
+}
+
+Capture3--PanelTabComponent QComboBox QAbstractItemView {
+	margin: 0px;
+	padding: 0px;
+	font-weight: normal;
+	font-size: $font-size;
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+
+Capture3--PanelTabComponent QComboBox::item {
+	color: rgb(0, 0, 0);
+	min-height: 15px;
+	max-height: 15px;
+	margin: 0px;
+	padding: 4px;
+	border: none;
+}
+
+Capture3--PanelTabComponent QComboBox::item:alternate {
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+}
+
+Capture3--PanelTabComponent QComboBox::item:selected {
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 170, 255);
+}
+
+Capture3--PanelTabComponent QComboBox::item:checked {
+	font-weight: bold;
+}
+
+Capture3--PanelTabComponent QComboBox::indicator {
+	color: transparent;
+	selection-color: transparent;
+	selection-background-color: transparent;
+	background-color: transparent;
+}

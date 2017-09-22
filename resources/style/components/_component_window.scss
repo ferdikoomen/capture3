@@ -1,0 +1,41 @@
+Capture3--WindowComponent {
+	min-width: 1280px;
+	min-height: 800px;
+	border: none;
+	background-color: $color-window-tabs-foreground;
+}
+
+Capture3--WindowComponent > QTabWidget::pane {
+	margin: 0px;
+	padding: 0px;
+	padding-top: -1px;
+	padding-bottom: -1px;
+	border: none;
+	border-top: 1px solid $color-window-tabs-border;
+	border-bottom: 1px solid $color-window-tabs-border;
+	background-color: $color-window-tabs-background;
+}
+
+Capture3--WindowComponent > QTabWidget > QTabBar::tab {
+	margin: 0px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	padding: 4px;
+	padding-right: 14px;
+	padding-left: 14px;
+	border: none;
+	border-right: 1px solid $color-window-tabs-divider;
+	border-radius: 0px;
+	font-size: $font-size;
+	font-weight: normal;
+	color: $color-window-tabs-text;
+}
+
+Capture3--WindowComponent > QTabWidget > QTabBar::tab:last {
+	border-right: none;
+}
+
+Capture3--WindowComponent > QTabWidget > QTabBar::tab:selected {
+	color: $color-window-tabs-text-selected;
+}
+

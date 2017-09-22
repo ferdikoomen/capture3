@@ -1,0 +1,30 @@
+Capture3--PanelGroupComponent {
+	background-color: $color-panel-group-background;
+}
+
+Capture3--PanelGroupComponent > QFrame {
+	border: none;
+	background-color: $color-panel-group-background;
+}
+
+Capture3--PanelGroupComponent > QPushButton#toggle {
+	min-width: 0px;
+	max-width: 1000px;
+	margin: 0px;
+	padding: 0px;
+	color: $color-panel-group-toggle-normal-text;
+	font-size: $font-size;
+	font-weight: normal;
+	text-align: left;
+	text-decoration: none;
+	border: none;
+	border-radius: 0px;
+	background-color: $color-panel-group-toggle-normal-background;
+}
+
+Capture3--PanelGroupComponent > QPushButton#toggle:focus,
+Capture3--PanelGroupComponent > QPushButton#toggle:hover,
+Capture3--PanelGroupComponent > QPushButton#toggle:pressed {
+	color: $color-panel-group-toggle-hover-text;
+	background-color: $color-panel-group-toggle-hover-background;
+}

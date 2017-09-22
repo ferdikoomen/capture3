@@ -1,0 +1,37 @@
+Capture3--PanelComponent {
+	border: none;
+	background-color: $color-panel-background;
+}
+
+Capture3--PanelComponent > QPushButton#toggle {
+	min-width: 12px;
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 3px;
+	padding-right: 6px;
+	color: $color-panel-toggle-normal-text;
+	font-weight: bold;
+	font-size: $font-size;
+	text-align: right;
+	text-decoration: none;
+	border: none;
+	border-top: 1px solid $color-panel-toggle-normal-border;
+	border-left: 1px solid $color-panel-toggle-normal-border;
+	border-right: 1px solid $color-panel-toggle-normal-border;
+	border-radius: 0px;
+	background-color: $color-panel-toggle-normal-background;
+}
+
+Capture3--PanelComponent > QPushButton#toggle:focus,
+Capture3--PanelComponent > QPushButton#toggle:hover,
+Capture3--PanelComponent > QPushButton#toggle:pressed {
+	color: $color-panel-toggle-hover-text;
+	background-color: $color-panel-toggle-hover-background;
+}
+
+Capture3--PanelComponent > QSplitter::handle {
+	width: 3px;
+	height: 3px;
+	image: none;
+	border: none;
+}

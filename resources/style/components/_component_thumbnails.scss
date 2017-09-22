@@ -1,0 +1,63 @@
+Capture3--ThumbnailsComponent {
+
+}
+
+Capture3--ThumbnailsComponentItem {
+
+}
+
+Capture3--ThumbnailsComponentItem QLabel {
+	margin-top: 3px;
+	margin-bottom: 6px;
+}
+
+Capture3--ThumbnailsComponentItem > QPushButton {
+	min-width: 20px;
+	max-width: 20px;
+	min-height: 20px;
+	max-height: 20x;
+	padding: 0px;
+	margin: 0px;
+	font-weight: bold;
+	font-size: 11px;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	border-radius: 10px;
+}
+
+Capture3--ThumbnailsComponentItem > QPushButton#remove {
+	margin-top: 4px;
+	margin-left: 4px;
+	color: $color-component-normal-text;
+	background-color: $color-component-normal-background;
+}
+
+Capture3--ThumbnailsComponentItem > QPushButton#remove:focus,
+Capture3--ThumbnailsComponentItem > QPushButton#remove:hover,
+Capture3--ThumbnailsComponentItem > QPushButton#remove:pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(255, 95, 90);
+}
+
+Capture3--ThumbnailsComponentItem > QPushButton#export {
+	margin-top: 4px;
+	margin-left: 28px;
+	color: $color-component-normal-text;
+	background-color: $color-component-normal-background;
+}
+
+Capture3--ThumbnailsComponentItem > QPushButton#export:focus,
+Capture3--ThumbnailsComponentItem > QPushButton#export:hover,
+Capture3--ThumbnailsComponentItem > QPushButton#export:pressed {
+	color: rgb(255, 255, 255);
+	background-color: rgb(40, 200, 60);
+}
+
+Capture3--ThumbnailsComponentItem > QLabel#image {
+	border: 1px solid $color-tab-selected-background;
+}
+
+Capture3--ThumbnailsComponentItem#selected > QLabel#image {
+	border: 1px solid $color-component-focus-border;
+}

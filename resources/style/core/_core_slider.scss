@@ -1,0 +1,24 @@
+Capture3--PanelTabComponent QSlider::groove:horizontal {
+	height: 4px;
+	margin: 0px;
+	margin-left: -2px;
+	border: none;
+	border-radius: 0px;
+	background: $color-component-normal-background;
+}
+
+Capture3--PanelTabComponent QSlider::handle:horizontal {
+	width: 2px;
+	height: 4px;
+	border: none;
+	border-radius: 0px;
+	background-color: $color-component-selection-color;
+}
+
+Capture3--PanelTabComponent QSlider::add-page:horizontal {
+	background-color: $color-component-normal-background;
+}
+
+Capture3--PanelTabComponent QSlider::sub-page:horizontal {
+	background-color: $color-component-selection-color;
+}

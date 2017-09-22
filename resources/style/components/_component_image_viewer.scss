@@ -1,0 +1,55 @@
+Capture3--ImageViewerComponentDisplay {
+	border: 1px solid rgb(33, 33, 33);
+	background-color: rgb(33, 33, 33);
+}
+
+Capture3--ImageViewerComponentMenu {
+	max-width: 100px;
+}
+
+Capture3--ImageViewerComponentMenu QRadioButton {
+	min-height: 20px;
+	max-height: 20px;
+	padding: 0px;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin: 0px;
+	font-weight: normal;
+	font-size: $font-size;
+	text-align: left;
+	text-decoration: none;
+	color: $color-component-normal-text;
+	border: none;
+	border-radius: 0px;
+	background-color: $color-component-normal-background;
+}
+
+Capture3--ImageViewerComponentMenu QRadioButton::indicator {
+	width: 0px;
+	height: 0px;
+	border: none;
+	border-radius: 0px;
+}
+
+Capture3--ImageViewerComponentMenu QRadioButton:hover,
+Capture3--ImageViewerComponentMenu QRadioButton:focus,
+Capture3--ImageViewerComponentMenu QRadioButton:pressed {
+	color: $color-component-hover-text;
+	background-color: $color-component-hover-background;
+}
+
+Capture3--ImageViewerComponentMenu QRadioButton:checked {
+	color: $color-button-normal-text;
+	background-color: $color-button-normal-background;
+}
+
+Capture3--ImageViewerComponentMenu QLabel#color {
+	min-width: 50px;
+	max-width: 200px;
+	min-height: 50px;
+	max-height: 200px;
+	padding: 0px;
+	margin: 0px;
+	border: 1px solid $color-component-normal-border;
+	background-color: $color-component-normal-background;
+}

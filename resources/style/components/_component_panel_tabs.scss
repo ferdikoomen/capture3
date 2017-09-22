@@ -1,0 +1,111 @@
+Capture3--PanelTabsComponent {
+	border: 1px solid $color-tab-border;
+	background-color: $color-tab-normal-background;
+}
+
+Capture3--PanelTabsComponent > QTabWidget::pane {
+	margin: 0px;
+	margin-top: -1px;
+	padding: 0px;
+	border: 1px solid $color-tab-selected-background;
+	border-top: 1px solid $color-tab-border;
+	background-color: $color-tab-selected-background;
+}
+
+Capture3--PanelTabsComponent > QTabWidget::tab-bar {
+	top: 0px;
+	left: 0px;
+	background-color: $color-tab-border;
+}
+
+Capture3--PanelTabsComponent > QTabWidget > QTabBar {
+	border-bottom: 1px solid $color-tab-border;
+	background-color: $color-tab-border;
+}
+
+Capture3--PanelTabsComponent > QTabWidget > QTabBar::tab {
+	margin: 0px;
+	margin-right: 1px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: $color-tab-normal-text;
+	border: none;
+	border-radius: 0px;
+	border-bottom: 1px solid $color-tab-border;
+	font-size: $font-size;
+	font-weight: bold;
+	background-color: $color-tab-normal-background
+}
+
+Capture3--PanelTabsComponent > QTabWidget > QTabBar::tab:focus,
+Capture3--PanelTabsComponent > QTabWidget > QTabBar::tab:hover,
+Capture3--PanelTabsComponent > QTabWidget > QTabBar::tab:pressed {
+	color: $color-tab-hover-text;
+	background-color: $color-tab-hover-background;
+}
+
+Capture3--PanelTabsComponent > QTabWidget > QTabBar::tab:selected {
+	padding-top: 5px;
+	padding-bottom: 7px;
+	color: $color-tab-selected-text;
+	border-top: 1px solid $color-tab-selected-background;
+	border-left: 1px solid $color-tab-selected-background;
+	border-right: 1px solid $color-tab-selected-background;
+	border-bottom: none;
+	background-color: $color-tab-selected-background;
+}
+
+Capture3--PanelTabsComponent > QTabWidget > QPushButton {
+	margin: 0px;
+	padding: 6px;
+	color: $color-tab-icon;
+	font-size: $font-size;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	border-radius: 0px;
+	background-color: $color-tab-normal-background;
+}
+
+Capture3--PanelTabsComponent > QTabWidget > QPushButton:focus,
+Capture3--PanelTabsComponent > QTabWidget > QPushButton:hover,
+Capture3--PanelTabsComponent > QTabWidget > QPushButton:pressed {
+	color: $color-tab-icon;
+	background-color: $color-tab-normal-background;
+}
+
+Capture3--PanelTabsComponent > QTabWidget#disabled::pane {
+	border: 1px solid $color-tab-normal-background;
+	border-top: 1px solid $color-tab-normal-background;
+}
+
+Capture3--PanelTabsComponent > QTabWidget#disabled > QTabBar,
+Capture3--PanelTabsComponent > QTabWidget#disabled > QTabBar::tab {
+	border-bottom: 1px solid $color-tab-normal-background;
+}
+
+Capture3--PanelTabsComponent > QTabWidget#disabled > QTabBar::tab:selected {
+	border-bottom: none;
+}
+
+Capture3--PanelTabsComponent#focus > QTabWidget::pane {
+	border: 1px solid $color-tab-highlight;
+}
+
+Capture3--PanelTabsComponent#focus > QTabWidget > QTabBar {
+	border-bottom: 1px solid $color-tab-highlight;
+}
+
+Capture3--PanelTabsComponent#focus > QTabWidget > QTabBar::tab {
+	border-bottom: 1px solid $color-tab-highlight;
+}
+
+Capture3--PanelTabsComponent#focus > QTabWidget > QTabBar::tab:selected {
+	border-top: 1px solid $color-tab-highlight;
+	border-left: 1px solid $color-tab-highlight;
+	border-right: 1px solid $color-tab-highlight;
+	border-bottom: none;
+}

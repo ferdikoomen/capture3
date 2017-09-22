@@ -1,0 +1,67 @@
+Capture3--PanelTabComponent QSpinBox {
+	min-height: 20px;
+	max-height: 20px;
+	max-width: 140px;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 5px;
+	font-size: $font-size;
+	font-weight: normal;
+	color: $color-component-normal-text;
+	border: 1px solid $color-component-normal-border;
+	border-radius: 0px;
+	background-color: $color-component-normal-background;
+	selection-color: $color-component-selection-text;
+	selection-background-color: $color-component-selection-background;
+}
+
+Capture3--PanelTabComponent QSpinBox:hover {
+	outline: none;
+	color: $color-component-hover-text;
+	border: 1px solid $color-component-hover-border;
+	background-color: $color-component-hover-background;
+}
+
+Capture3--PanelTabComponent QSpinBox:focus {
+	outline: none;
+	color: $color-component-focus-text;
+	border: 1px solid $color-component-focus-border;
+	background-color: $color-component-focus-background;
+}
+
+Capture3--PanelTabComponent QSpinBox::up-button,
+Capture3--PanelTabComponent QSpinBox::down-button {
+	width: 20px;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	border-radius: 0px;
+	background-color: transparent;
+}
+
+Capture3--PanelTabComponent QSpinBox::up-button:pressed,
+Capture3--PanelTabComponent QSpinBox::down-button:pressed {
+	top: 1px;
+}
+
+Capture3--PanelTabComponent QSpinBox::up-arrow,
+Capture3--PanelTabComponent QSpinBox::down-arrow {
+	width: 20px;
+	height: 10px;
+}
+
+Capture3--PanelTabComponent QSpinBox::up-arrow {
+	image: url(":/gfx/arrow_up_normal.png");
+}
+
+Capture3--PanelTabComponent QSpinBox::up-arrow:focus {
+	image: url(":/gfx/arrow_up_focus.png");
+}
+
+Capture3--PanelTabComponent QSpinBox::down-arrow {
+	image: url(":/gfx/arrow_down_normal.png");
+}
+
+Capture3--PanelTabComponent QSpinBox::down-arrow:focus {
+	image: url(":/gfx/arrow_down_focus.png");
+}

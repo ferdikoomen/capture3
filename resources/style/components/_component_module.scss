@@ -1,0 +1,21 @@
+Capture3--ModuleComponent {
+	margin: 0px;
+	padding: -1px;
+	border: none;
+	border-top: 1px solid $color-window-tabs-border;
+	border-bottom: 1px solid $color-window-tabs-border;
+	background-color: $color-window-tabs-background;
+}
+
+Capture3--ModuleComponent QSplitter {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+Capture3--ModuleComponent QSplitter::handle {
+	width: 3px;
+	height: 3px;
+	image: none;
+	border: none;
+}

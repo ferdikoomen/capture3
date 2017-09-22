@@ -1,0 +1,22 @@
+Capture3--CurveComponent > QPushButton {
+	min-width: 20px;
+	max-width: 20px;
+	min-height: 20px;
+	max-height: 20px;
+	padding: 0px;
+	margin: 0px;
+	border-radius: 0px;
+	background-color: $color-component-normal-background;
+	background-image: url(":/gfx/toggle_curve_details.png");
+	background-repeat: no-repeat;
+}
+
+Capture3--CurveComponent > QPushButton:hover,
+Capture3--CurveComponent > QPushButton:checked {
+	background-color: $color-component-normal-background;
+}
+
+Capture3--CurveComponent > QPushButton:checked {
+	background-image: url(":/gfx/toggle_curve.png");
+	background-repeat: no-repeat;
+}

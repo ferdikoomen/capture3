@@ -1,0 +1,36 @@
+Capture3--CameraControlComponent {
+
+}
+
+Capture3--CameraControlComponent QTableWidget {
+	min-height: 134px;
+}
+
+Capture3--CameraControlComponent QTableWidget QHeaderView::section:vertical {
+	min-width: 56px;
+	max-width: 56px;
+}
+
+Capture3--CameraControlComponent QPushButton#small {
+	min-width: 22px;
+	max-width: 22px;
+	padding-left: 0px;
+	padding-right: 0px;
+	font-weight: bold;
+}
+
+Capture3--CameraControlComponent QPushButton#small {
+	color: $color-secondary-button-normal-text;
+	background-color: $color-secondary-button-normal-background;
+}
+
+Capture3--CameraControlComponent QPushButton#small:focus,
+Capture3--CameraControlComponent QPushButton#small:hover {
+	color: $color-secondary-button-focus-text;
+	background-color: $color-secondary-button-focus-background;
+}
+
+Capture3--CameraControlComponent QPushButton#small:pressed {
+	color: $color-secondary-button-pressed-text;
+	background-color: $color-secondary-button-pressed-background;
+}

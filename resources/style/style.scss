@@ -1,0 +1,57 @@
+@import "variables/_colors.scss";
+
+
+@import "core/_core_label.scss";
+@import "core/_core_pushbutton.scss";
+@import "core/_core_lineedit.scss";
+@import "core/_core_combobox.scss";
+@import "core/_core_checkbox.scss";
+@import "core/_core_spinbox.scss";
+@import "core/_core_slider.scss";
+
+
+@import "components/_component_window.scss";
+@import "components/_component_module.scss";
+@import "components/_component_panel.scss";
+@import "components/_component_panel_tabs.scss";
+@import "components/_component_panel_tab.scss";
+@import "components/_component_panel_group.scss";
+@import "components/_component_scroll.scss";
+@import "components/_component_table.scss";
+@import "components/_component_graphic.scss";
+@import "components/_component_graphic_view.scss";
+@import "components/_component_form.scss";
+@import "components/_component_curve.scss";
+@import "components/_component_render.scss";
+@import "components/_component_welcome.scss";
+@import "components/_component_camera_preview.scss";
+@import "components/_component_camera_settings.scss";
+@import "components/_component_camera_control.scss";
+@import "components/_component_thumbnails.scss";
+@import "components/_component_image_viewer.scss";
+@import "components/_component_image_graph.scss";
+@import "components/_component_image_histogram.scss";
+@import "components/_component_image_waveform.scss";
+@import "components/_component_dynamic_range.scss";
+@import "components/_component_white_balance_curves.scss";
+@import "components/_component_white_balance_patches.scss";
+@import "components/_component_color_profile_curves.scss";
+@import "components/_component_color_profile_graph.scss";
+@import "components/_component_color_profile_matrix.scss";
+@import "components/_component_color_chart.scss";
+@import "components/_component_progress_bar.scss";
+@import "components/_component_progress_dialog.scss";
+
+
+@import "panels/_panel_camera.scss";
+@import "panels/_panel_image.scss";
+@import "panels/_panel_image_data.scss";
+@import "panels/_panel_dynamic_range.scss";
+@import "panels/_panel_patches.scss";
+@import "panels/_panel_profile_curves.scss";
+@import "panels/_panel_profile_result.scss";
+@import "panels/_panel_thumbnails.scss";
+
+
+@import "dialogs/_dialog_about.scss";
+@import "dialogs/_dialog_register.scss";

@@ -1,0 +1,78 @@
+Capture3--TableComponent {
+	margin: 0px;
+	padding: 0px;
+	font-size: 10px;
+	font-weight: normal;
+	text-align: left;
+	border: 1px solid $color-table-border;
+	gridline-color: $color-table-background;
+	color: $color-table-text;
+	background-color: $color-table-background;
+}
+
+Capture3--TableComponent::item {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+Capture3--TableComponent QLabel {
+	margin: 0px;
+	padding: 1px;
+	font-size: 10px;
+	font-weight: normal;
+	color: $color-table-text;
+	background-color: $color-table-background;
+}
+
+Capture3--TableComponent QLabel#highlight {
+	font-weight: normal;
+	color: $color-table-highlight-text;
+	background-color: $color-table-highlight-background;
+}
+
+Capture3--TableComponent QLabel#focus {
+	font-weight: bold;
+	color: $color-table-focus-text;
+	background-color: $color-table-focus-background;
+}
+
+Capture3--TableComponent QLabel#error {
+	font-weight: bold;
+	color: $color-table-error-text;
+	background-color: $color-table-error-background;
+}
+
+Capture3--TableComponent QHeaderView {
+	background-color: $color-table-background;
+}
+
+Capture3--TableComponent QHeaderView::section {
+	margin: 0px;
+	padding: 4px;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: left;
+	border: none;
+	color: $color-table-text;
+	background-color: $color-table-background;
+}
+
+Capture3--TableComponent QTableCornerButton::section {
+	border: none;
+	background-color: $color-table-background;
+}
+
+Capture3--TableComponent QHeaderView::section:vertical {
+	min-width: 17px;
+	max-width: 17px;
+	border-right: 1px solid $color-table-gridline;
+	background-color: $color-table-background;
+}
+
+Capture3--TableComponent QHeaderView::section:horizontal {
+	min-height: 17px;
+	max-height: 17px;
+	border-bottom: 1px solid $color-table-gridline;
+	background-color: $color-table-background;
+}

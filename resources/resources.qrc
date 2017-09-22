@@ -1,0 +1,22 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+	<qresource prefix="/">
+
+		<file>shaders/simple.frag</file>
+		<file>shaders/simple.vert</file>
+
+		<file>style/style.css</file>
+
+		<file>gfx/arrow_down_focus.png</file>
+		<file>gfx/arrow_down_normal.png</file>
+		<file>gfx/arrow_focus.png</file>
+		<file>gfx/arrow_normal.png</file>
+		<file>gfx/arrow_up_focus.png</file>
+		<file>gfx/arrow_up_normal.png</file>
+		<file>gfx/cursor_picker.png</file>
+		<file>gfx/toggle_curve_details.png</file>
+		<file>gfx/toggle_curve.png</file>
+		<file>gfx/color_chart.png</file>
+
+	</qresource>
+</RCC>

@@ -1,0 +1,28 @@
+Capture3--PanelTabComponent QPushButton {
+	min-height: 20px + 2px;
+	max-height: 20px + 2px;
+	max-width: 140px;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 24px;
+	padding-right: 24px;
+	color: $color-button-normal-text;
+	font-size: $font-size;
+	font-weight: normal;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	border-radius: 0px;
+	background-color: $color-button-normal-background;
+}
+
+Capture3--PanelTabComponent QPushButton:focus,
+Capture3--PanelTabComponent QPushButton:hover {
+	color: $color-button-focus-text;
+	background-color: $color-button-focus-background;
+}
+
+Capture3--PanelTabComponent QPushButton:pressed {
+	color: $color-button-pressed-text;
+	background-color: $color-button-pressed-background;
+}
