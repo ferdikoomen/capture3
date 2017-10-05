@@ -16,7 +16,6 @@ set(DESCRIPTION "Capture3 - Copyright (c) 2016-2017, Ferdi Koomen")
 set(COMPANY "Ferdi Koomen")
 set(COPYRIGHT "Copyright (c) 2016-2017, Ferdi Koomen. All rights reserved.")
 set(IDENTIFIER "com.capture3.application")
-set(CERTIFICATE "Mac Developer: Ferdi Koomen (**********)")
 
 
 #
@@ -81,19 +80,19 @@ set(LIBRARIES
 	gphoto2
 	gphoto2_port
 	raw
-	freeimage
-	freetype
 	lcms2
-	cairo
+	# freeimage
+	# freetype
+	# cairo
 
 	# FFMPEG
-	avcodec
-	avdevice
-	avfilter
-	avformat
-	avutil
-	swresample
-	swscale
+	# avcodec
+	# avdevice
+	# avfilter
+	# avformat
+	# avutil
+	# swresample
+	# swscale
 
 	# OPEN CV
 	opencv_core
@@ -108,14 +107,14 @@ set(LIBRARIES
 	opencv_shape
 
 	# BOOST
-	boost_chrono
-	boost_context
-	boost_date_time
-	boost_filesystem
-	boost_signals
-	boost_system
-	boost_thread
-	boost_timer
+	# boost_chrono
+	# boost_context
+	# boost_date_time
+	# boost_filesystem
+	# boost_signals
+	# boost_system
+	# boost_thread
+	# boost_timer
 	)
 
 
@@ -258,11 +257,9 @@ install(FILES "${QT}/plugins/sqldrivers/libqsqlite.dylib" DESTINATION "${MACOSX_
 # 2. FIND PLUGINS
 # 3. BUNDLE APP
 # 4. FIX APP
-# 5. CODESIGN APP
 #
 install(CODE "file(WRITE \"${MACOSX_APP}/Contents/Resources/qt.conf\" \"[Paths]\n\rPlugins = Plugins\n\r\")")
 install(CODE "file(GLOB_RECURSE PLUGINS \"${MACOSX_APP}/Contents/Plugins/*\")")
 install(CODE "include(BundleUtilities)")
 install(CODE "fixup_bundle(\"${MACOSX_APP}/Contents/MacOS/${PROJECT_NAME}\" \"\${PLUGINS}\" \"${LINK_DIR}\")")
-install(CODE "execute_process(COMMAND codesign --force --deep --verbose --sign \"${CERTIFICATE}\" \"${MACOSX_APP}\")")
 

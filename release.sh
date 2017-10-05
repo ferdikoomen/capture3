@@ -7,7 +7,7 @@ npm run build
 
 
 # Clean directory
-rm -r build/release
+rm -rf build/release
 mkdir -p build/release
 cd build/release
 
@@ -19,7 +19,18 @@ cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_C_COMPILER=/usr/local/gcc-6/bin/gcc -
 # Build the application
 make -j 8
 make install
+cd ../../
 
 
-# Build a DMG file for distribution
-dmgcanvas ../../installer/installer.dmgCanvas bin/Capture3.dmg
+# Code APP
+codesign --force --deep --verbose --sign "Developer ID Application: XXXX" build/release/bin/Capture3.app
+codesign --verbose --verify build/release/bin/Capture3.app
+
+
+# Build a DMG file
+dmgcanvas installer/installer.dmgCanvas build/release/bin/Capture3.dmg
+
+
+# Code sign DMG file
+codesign --verbose --sign "Developer ID Application: XXXX" build/release/bin/Capture3.dmg
+codesign --verbose --verify build/release/bin/Capture3.dmg
