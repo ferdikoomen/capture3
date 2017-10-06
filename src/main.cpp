@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
 	QApplication::setApplicationVersion(Capture3::APPLICATION_VERSION);
 	QApplication::setOrganizationName(Capture3::APPLICATION_COMPANY);
 	QApplication::setQuitOnLastWindowClosed(true);
+	QApplication::setDesktopSettingsAware(false);
 	QApplication app(argc, argv);
 
 	// Run application
