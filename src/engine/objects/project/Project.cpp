@@ -1,6 +1,5 @@
 #include "Project.h"
 
-
 namespace Capture3
 {
 
@@ -15,13 +14,15 @@ namespace Capture3
 		images()
 	{
 		// Open path
-		open(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + "/" + APPLICATION_NAME);
+		// open(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + "/" + APPLICATION_NAME);
 	}
 
 
 	Project::~Project()
 	{
-		database.close();
+		if (database.isOpen()) {
+			database.close();
+		}
 		databaseQuery.clear();
 		images.clear();
 	}
@@ -40,8 +41,12 @@ namespace Capture3
 	const QFileInfo Project::getNextFileRaw()
 	{
 		// Return relative path to next image (files/dsc/DSC_0003.NEF)
-		const QString fileNumber = QString("%1").arg(countRaw++, 4, 10, QChar('0'));
-		const QString filePath = "files/dsc/DSC_" + fileNumber + ".NEF";
+		// const QString fileNumber = QString("%1").arg(countRaw++, 4, 10, QChar('0'));
+		// const QString filePath = "files/dsc/DSC_" + fileNumber + ".NEF";
+		// nextFileRaw.setFile(filePath);
+
+		// DEMO
+		const QString filePath = QStandardPaths::standardLocations(QStandardPaths::DataLocation).last().replace("Capture3.appContents", "Capture3.app/Contents") + "/DSC_0001.NEF";
 		nextFileRaw.setFile(filePath);
 		return nextFileRaw;
 	}
@@ -50,9 +55,13 @@ namespace Capture3
 	const QFileInfo Project::getNextFileImage()
 	{
 		// Return relative path to next image (files/img/IMG_0001.RAW)
-		const QString fileNumber = QString("%1").arg(countImage++, 4, 10, QChar('0'));
-		const QString filePath = "files/img/IMG_" + fileNumber + ".RAW";
-		nextFileImage.setFile(filePath);
+		// const QString fileNumber = QString("%1").arg(countImage++, 4, 10, QChar('0'));
+		// const QString filePath = "files/img/IMG_" + fileNumber + ".RAW";
+		// nextFileImage.setFile(filePath);
+
+		// DEMO
+		const QString filePath = QStandardPaths::standardLocations(QStandardPaths::DataLocation).last().replace("Capture3.appContents", "Capture3.app/Contents") + "/DSC_0001.NEF";
+		nextFileRaw.setFile(filePath);
 		return nextFileImage;
 	}
 

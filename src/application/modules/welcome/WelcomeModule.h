@@ -27,6 +27,7 @@
 #include "../../../utils/ColorChartDetectionUtils.h"
 #include "../../../utils/ColorChartPreviewUtils.h"
 #include "../../../utils/ImageExportUtils.h"
+#include "../../../utils/ImageImportUtils.h"
 
 
 namespace Capture3

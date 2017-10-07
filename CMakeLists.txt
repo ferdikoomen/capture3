@@ -86,13 +86,13 @@ set(LIBRARIES
 	# cairo
 
 	# FFMPEG
-	# avcodec
-	# avdevice
-	# avfilter
-	# avformat
-	# avutil
-	# swresample
-	# swscale
+	avcodec
+	avdevice
+	avfilter
+	avformat
+	avutil
+	swresample
+	swscale
 
 	# OPEN CV
 	opencv_core
@@ -107,14 +107,14 @@ set(LIBRARIES
 	opencv_shape
 
 	# BOOST
-	# boost_chrono
-	# boost_context
-	# boost_date_time
-	# boost_filesystem
-	# boost_signals
-	# boost_system
-	# boost_thread
-	# boost_timer
+	boost_chrono
+	boost_context
+	boost_date_time
+	boost_filesystem
+	boost_signals
+	boost_system
+	boost_thread
+	boost_timer
 	)
 
 
@@ -250,6 +250,12 @@ install(FILES "${QT}/plugins/imageformats/libqtiff.dylib" DESTINATION "${MACOSX_
 install(FILES "${QT}/plugins/platforms/libqcocoa.dylib" DESTINATION "${MACOSX_APP}/Contents/Plugins/platforms/")
 install(FILES "${QT}/plugins/platforms/libqminimal.dylib" DESTINATION "${MACOSX_APP}/Contents/Plugins/platforms/")
 install(FILES "${QT}/plugins/sqldrivers/libqsqlite.dylib" DESTINATION "${MACOSX_APP}/Contents/Plugins/sqldrivers/")
+
+
+#
+# COPY TEST FILES
+#
+install(FILES "${CMAKE_CURRENT_SOURCE_DIR}/resources/test/DSC_0001.NEF" DESTINATION "${MACOSX_APP}/Contents/Resources/")
 
 
 #

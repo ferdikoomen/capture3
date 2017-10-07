@@ -1,6 +1,5 @@
 #include "CameraConnection.h"
 
-
 namespace Capture3
 {
 
@@ -38,26 +37,37 @@ namespace Capture3
 		gp_port_info_list_load(cameraPortInfoList);
 		indexPort = gp_port_info_list_lookup_path(cameraPortInfoList, cameraPort.toLatin1().constData());
 
-		// Find port information
-		gp_port_info_new(&cameraPortInfo);
-		gp_port_info_list_get_info(cameraPortInfoList, indexPort, &cameraPortInfo);
+		if (indexPort >= 0) {
 
-		// Find port name and path
-		gp_port_info_get_name(cameraPortInfo, &cameraPortInfoName);
-		gp_port_info_get_path(cameraPortInfo, &cameraPortInfoPath);
+			// Find port information
+			gp_port_info_new(&cameraPortInfo);
+			if (gp_port_info_list_get_info(cameraPortInfoList, indexPort, &cameraPortInfo) == GP_OK) {
 
-		// Find camera model
-		gp_abilities_list_new(&cameraAbilitiesList);
-		gp_abilities_list_load(cameraAbilitiesList, context);
-		indexModel = gp_abilities_list_lookup_model(cameraAbilitiesList, cameraModel.toLatin1().constData());
+				// Find port name and path
+				gp_port_info_get_name(cameraPortInfo, &cameraPortInfoName);
+				gp_port_info_get_path(cameraPortInfo, &cameraPortInfoPath);
 
-		// Find camera model options
-		gp_abilities_list_get_abilities(cameraAbilitiesList, indexModel, &cameraAbilities);
-		gp_camera_set_port_info(camera, cameraPortInfo);
-		gp_camera_set_abilities(camera, cameraAbilities);
+				// Find camera model
+				gp_abilities_list_new(&cameraAbilitiesList);
+				gp_abilities_list_load(cameraAbilitiesList, context);
+				indexModel = gp_abilities_list_lookup_model(cameraAbilitiesList, cameraModel.toLatin1().constData());
 
-		// Init camera (can take up to 10 seconds)
-		connected = (gp_camera_init(camera, context) == GP_OK);
+				if (indexModel >= 0) {
+
+					// Find camera model options
+					if (gp_abilities_list_get_abilities(cameraAbilitiesList, indexModel, &cameraAbilities) == GP_OK) {
+
+						// Set camera port and abilities
+						gp_camera_set_port_info(camera, cameraPortInfo);
+						gp_camera_set_abilities(camera, cameraAbilities);
+
+						// Init camera (can take up to 10 seconds)
+						connected = (gp_camera_init(camera, context) == GP_OK);
+					}
+				}
+			}
+		}
+
 		return connected;
 	}
 

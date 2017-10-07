@@ -1,7 +1,7 @@
 # Capture3
 
 Capture3 is a C++ desktop application that can capture and process photos through a tethered connection with a digital camera.
-It started out as a research project to learn more about digital camera's, image processing, color spaces, C++, OpenCV and multi-threading. 
+It started out as a research project to learn more about digital cameras, image processing, color spaces, C++, OpenCV and multi-threading. 
 The main features are:
 
 1. **Tethered capturing:** Automatically capture multiple photos with different [exposure values](https://en.wikipedia.org/wiki/Exposure_value) and focus planes, without touching the camera.
@@ -10,7 +10,7 @@ The main features are:
 4. **Focus merging:** Merge photos with different focal planes through a technique called [focus stacking](https://en.wikipedia.org/wiki/Focus_stacking) to create one result image with a higher DOF (Depth Of Field).
 5. **Color space visualizer:** Preview images in [RGB](https://en.wikipedia.org/wiki/RGB_color_space), [HSB](https://en.wikipedia.org/wiki/HSL_and_HSV), [XYZ](https://en.wikipedia.org/wiki/CIE_1931_color_space) and [LAB](https://en.wikipedia.org/wiki/Lab_color_space) color spaces, including [3D color space graphs](screenshots/screenshot-panel-graph.png).
 
-Capture3 is developed using [JetBrains CLion](https://www.jetbrains.com/clion/) and can be build on a Mac with macOS Sierra or higher.
+Capture3 is developed using [JetBrains CLion](https://www.jetbrains.com/clion/) and can be built on a Mac with macOS Sierra or higher.
 Although it could support other camera's, it's only tested using a [Nikon D3300](http://imaging.nikon.com/lineup/dslr/d3300/) and [Sigma 35mm f/1.4 DG HSM Art](https://www.sigmaphoto.com/lenses/standard-lenses/35mm-f14-dg-hsm-a) lens.
 
 ## Learn more

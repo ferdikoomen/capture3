@@ -78,7 +78,7 @@ namespace Capture3
 	void WelcomeModule::capture()
 	{
 		// Capture / load background image
-		Image *imageWhite = engine.getCamera().capture(
+		Image *image = engine.getCamera().capture(
 			cameraPanel.getCameraControl().getIndexAperture(),
 			cameraPanel.getCameraControl().getIndexShutterSpeed(),
 			cameraPanel.getCameraControl().getIndexIso(),
@@ -90,38 +90,19 @@ namespace Capture3
 			cameraPanel.getCameraControl().getFocusNear(),
 			cameraPanel.getCameraControl().getFocusFar()
 		);
-
-		// Capture / load background image
-		Image *imageColorChart = engine.getCamera().capture(
-			cameraPanel.getCameraControl().getIndexAperture(),
-			cameraPanel.getCameraControl().getIndexShutterSpeed(),
-			cameraPanel.getCameraControl().getIndexIso(),
-			cameraPanel.getCameraControl().getIndexShots(),
-			cameraPanel.getCameraControl().getIndexRange(),
-			cameraPanel.getCameraControl().getIndexStep(),
-			cameraPanel.getCameraControl().getIndexMergeShots(),
-			cameraPanel.getCameraControl().getIndexMergeRange(),
-			cameraPanel.getCameraControl().getFocusNear(),
-			cameraPanel.getCameraControl().getFocusFar()
-		);
-
-		// Convert background image to white level map
-		auto *whiteLevel = new WhiteLevel(imageWhite);
-		whiteLevel->apply(imageColorChart);
-		imageColorChart->convertRGB();
+		image->convertRGB();
 
 		// Detect color chart and create color profile
 		auto *colorChartReference = new ColorChart();
-		ColorChart *colorChartDetected = detectColorChart(imageColorChart);
+		ColorChart *colorChartDetected = detectColorChart(image);
 		auto *colorProfile = new ColorProfile(colorChartReference, colorChartDetected);
 		auto *whiteBalance = new WhiteBalance(colorChartReference, colorChartDetected);
 
 		// Display the color chart image with gamma correction
-		imageColorChart->gammaCorrection();
+		image->gammaCorrection();
 
 		// Show!
-		thumbnailsPanel.getThumbnails().add(imageWhite);
-		thumbnailsPanel.getThumbnails().add(imageColorChart);
+		thumbnailsPanel.getThumbnails().add(image);
 		thumbnailsPanel.getThumbnails().add(generatePreview(colorChartReference));
 		thumbnailsPanel.getThumbnails().add(generatePreview(colorChartDetected));
 		patchesPanel.getColorChart().show(colorProfile);
@@ -129,7 +110,7 @@ namespace Capture3
 		profileCurvesPanel.getWhiteBalanceCurves().show(whiteBalance);
 		profileResultPanel.getColorProfileGraph().show(colorChartReference, colorChartDetected);
 		profileResultPanel.getColorProfileMatrix().show(colorChartReference, colorChartDetected);
-		showImage(imageColorChart);
+		showImage(image);
 	}
 
 }

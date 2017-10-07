@@ -23,7 +23,7 @@ cd ../../
 
 
 # Code APP
-codesign --force --deep --verbose --sign "Developer ID Application: XXXX" build/release/bin/Capture3.app
+codesign --force --deep --verbose --sign "Developer ID Application: {YOUR ID HERE}" build/release/bin/Capture3.app
 codesign --verbose --verify build/release/bin/Capture3.app
 
 
@@ -32,5 +32,5 @@ dmgcanvas installer/installer.dmgCanvas build/release/bin/Capture3.dmg
 
 
 # Code sign DMG file
-codesign --verbose --sign "Developer ID Application: XXXX" build/release/bin/Capture3.dmg
+codesign --verbose --sign "Developer ID Application: {YOUR ID HERE}" build/release/bin/Capture3.dmg
 codesign --verbose --verify build/release/bin/Capture3.dmg
