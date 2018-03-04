@@ -80,11 +80,11 @@ Although it could support other camera's, it's only tested using a [Nikon D3300]
 - openssl 1.1.0c
 
 ## Run
-```shell
+```bash
 ./debug.sh
 ```
 
 ## Release
-```shell
+```bash
 ./release.sh
 ```
