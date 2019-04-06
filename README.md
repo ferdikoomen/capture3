@@ -79,6 +79,13 @@ Although it could support other camera's, it's only tested using a [Nikon D3300]
 - nasm 2.12.02
 - openssl 1.1.0c
 
+## Install
+We use Yarn package manager to manage our dependencies. 
+```bash
+curl -o- -L https://yarnpkg.com/install.sh | bash
+yarn install
+```
+
 ## Run
 ```bash
 ./debug.sh

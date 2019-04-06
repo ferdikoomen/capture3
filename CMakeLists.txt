@@ -81,9 +81,6 @@ set(LIBRARIES
 	gphoto2_port
 	raw
 	lcms2
-	# freeimage
-	# freetype
-	# cairo
 
 	# FFMPEG
 	avcodec
@@ -99,6 +96,8 @@ set(LIBRARIES
 	opencv_imgcodecs
 	opencv_imgproc
 	opencv_photo
+	opencv_video
+	opencv_videoio
 	opencv_highgui
 	opencv_calib3d
 	opencv_features2d

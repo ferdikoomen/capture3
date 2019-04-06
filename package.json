@@ -4,12 +4,13 @@
 	"description": "C++ research project",
 	"author": "Ferdi Koomen",
 	"homepage": "http://www.capture3.com",
+	"private": true,
 	"license": "MIT",
 	"scripts": {
 		"build": "node-sass resources/style/style.scss resources/style/style.css"
 	},
 	"devDependencies": {
-		"node-sass": "4.7.x"
+		"node-sass": "4.9.3"
 	},
 	"engines": {
 		"node": ">= 8.9.x",
