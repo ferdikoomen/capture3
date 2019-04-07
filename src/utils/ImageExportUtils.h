@@ -32,11 +32,13 @@ namespace Capture3
 		if (!path.isEmpty()) {
 
 			// Convert to 8 bit image and ejxport
-			cv::Mat temp;
-			image.convertTo(temp, image.channels() == 1 ? CV_8UC1 : CV_8UC3, 255);
-			cv::cvtColor(temp, temp, cv::COLOR_RGB2BGR);
-			cv::imwrite(path.toLatin1().constData(), temp);
-			temp.release();
+
+			// TODO: ENABLE
+			// cv::Mat temp;
+            // image.convertTo(temp, image.channels() == 1 ? CV_8UC1 : CV_8UC3, 255);
+            // cv::cvtColor(temp, temp, cv::COLOR_RGB2BGR);
+            // cv::imwrite(path.toLatin1().constData(), temp);
+            // temp.release();
 		}
 	}
 

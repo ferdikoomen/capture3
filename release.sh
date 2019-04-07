@@ -13,7 +13,7 @@ cd build/release
 
 
 # Run CMAKE, with GCC 6.x compiler
-cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_C_COMPILER=/usr/local/gcc-6/bin/gcc -D CMAKE_CXX_COMPILER=/usr/local/gcc-6/bin/g++ ../../
+cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_C_COMPILER=/usr/local/bin/gcc-8 -D CMAKE_CXX_COMPILER=/usr/local/bin/g++-8 ../../
 
 
 # Build the application
