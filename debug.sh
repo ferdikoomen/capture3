@@ -2,8 +2,8 @@
 
 
 # Run NPM
-npm install
-npm run build
+yarn install
+yarn run build
 
 
 # Clean directory
