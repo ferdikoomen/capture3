@@ -4,13 +4,6 @@ sudo xcode-select --install
 
 
 
-# Install platform headers
-
-cd /Library/Developer/CommandLineTools/Packages/
-open .
-
-
-
 # Install Cmake
 
 https://cmake.org
@@ -65,14 +58,38 @@ So, once we have all the dependencies installed we can just build OpenCV like th
 cd /Users/ferdi/Workspace/GitHub/opencv/opencv
 mkdir build
 cd build
-cmake -D CMAKE_BUILD_TYPE=Release -D BUILD_DOCS=OFF -D BUILD_EXAMPLES=OFF -D BUILD_PERF_TESTS=OFF -D BUILD_TESTS=OFF -D WITH_LAPACK=OFF -D WITH_AVFOUNDATION=OFF -D WITH_FFMPEG=ON -D WITH_OPENMP=ON -D WITH_OPENGL=ON -D WITH_QT=ON -D QT_QMAKE_EXECUTABLE=/usr/local/opt/qt5/bin/qmake -D QT_QMAKE_EXECUTABLE=/usr/local/opt/qt5/bin/qmake -D Qt5Concurrent_DIR=/usr/local/opt/qt5/lib/cmake/Qt5Concurrent -D Qt5Core_DIR=/usr/local/opt/qt5/lib/cmake/Qt5Core -D Qt5Gui_DIR=/usr/local/opt/qt5/lib/cmake/Qt5Gui -D Qt5Test_DIR=/usr/local/opt/qt5/lib/cmake/Qt5Test -D Qt5Widgets_DIR=/usr/local/opt/qt5/lib/cmake/Qt5Widgets -D Qt5OpenGL_DIR=/usr/local/opt/qt5/lib/cmake/Qt5OpenGL -D OPENCV_EXTRA_MODULES_PATH=/Users/ferdi/Workspace/GitHub/opencv/opencv_contrib/modules -D CMAKE_INSTALL_PREFIX=/usr/local/opencv -D CMAKE_C_COMPILER=/usr/local/bin/gcc-8 -D CMAKE_CXX_COMPILER=/usr/local/bin/g++-8 ..
+cmake  \
+-D CMAKE_BUILD_TYPE=Release \
+-D BUILD_DOCS=OFF \
+-D BUILD_EXAMPLES=OFF \
+-D BUILD_PERF_TESTS=OFF \
+-D BUILD_TESTS=OFF \
+-D WITH_LAPACK=OFF \
+-D WITH_AVFOUNDATION=OFF \
+-D WITH_FFMPEG=ON \
+-D WITH_OPENMP=ON \
+-D WITH_OPENGL=ON \
+-D WITH_QT=ON \
+-D Qt5_DIR=/usr/local/opt/qt5/lib/cmake/Qt5 \
+-D QT_QMAKE_EXECUTABLE=/usr/local/opt/qt5/bin/qmake \
+-D Qt5Concurrent_DIR=/usr/local/opt/qt5/lib/cmake/Qt5Concurrent \
+-D Qt5Core_DIR=/usr/local/opt/qt5/lib/cmake/Qt5Core \
+-D Qt5Gui_DIR=/usr/local/opt/qt5/lib/cmake/Qt5Gui \
+-D Qt5Test_DIR=/usr/local/opt/qt5/lib/cmake/Qt5Test \
+-D Qt5Widgets_DIR=/usr/local/opt/qt5/lib/cmake/Qt5Widgets \
+-D Qt5OpenGL_DIR=/usr/local/opt/qt5/lib/cmake/Qt5OpenGL \
+-D OPENCV_EXTRA_MODULES_PATH=/Users/ferdi/Workspace/GitHub/opencv/opencv_contrib/modules \
+-D CMAKE_INSTALL_PREFIX=/usr/local/opencv \
+-D CMAKE_C_COMPILER=/usr/local/bin/gcc-8 \
+-D CMAKE_CXX_COMPILER=/usr/local/bin/g++-8 \
+..
 make
 sudo make install
 ```
 
 
 
-# Warning about "Atomic"
+# Warning about "Atomic"?
 
 `error: '_Atomic' does not name a type`
 
