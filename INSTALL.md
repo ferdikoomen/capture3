@@ -45,6 +45,7 @@ brew install gphoto2
 brew install opencv@3
 brew install opencv@4
 brew install qt
+brew install woff2
 ```
 
 
