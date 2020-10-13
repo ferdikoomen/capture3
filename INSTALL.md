@@ -26,7 +26,6 @@ Then install the following dependencies:
 
 ```
 brew install cmake
-brew install python@2
 brew install python@3
 brew install gcc@6
 brew install gcc@8
@@ -37,6 +36,7 @@ brew install libraw
 brew install glfw
 brew install freeimage
 brew install freetype
+brew install woff2
 brew install boost
 brew install ffmpeg
 brew install openssl
@@ -45,7 +45,6 @@ brew install gphoto2
 brew install opencv@3
 brew install opencv@4
 brew install qt
-brew install woff2
 ```
 
 
