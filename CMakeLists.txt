@@ -12,9 +12,9 @@ set(PROJECT_VERSION_MAJOR 1)
 set(PROJECT_VERSION_MINOR 0)
 set(PROJECT_VERSION_PATCH 0)
 set(PROJECT_VERSION ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH})
-set(DESCRIPTION "Capture3 - Copyright (c) 2016-2018, Ferdi Koomen")
+set(DESCRIPTION "Capture3 - Copyright (c) 2016-2020, Ferdi Koomen")
 set(COMPANY "Ferdi Koomen")
-set(COPYRIGHT "Copyright (c) 2016-2018, Ferdi Koomen. All rights reserved.")
+set(COPYRIGHT "Copyright (c) 2016-2020, Ferdi Koomen. All rights reserved.")
 set(IDENTIFIER "com.capture3.application")
 
 
@@ -25,7 +25,7 @@ set(CMAKE_C_COMPILER "/usr/local/bin/gcc-8")
 set(CMAKE_CXX_COMPILER "/usr/local/bin/g++-8")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-pragmas")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-deprecated-declarations")
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -mmacosx-version-min=10.14")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -mmacosx-version-min=10.15") # Catalina
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fopenmp")
 set(CMAKE_CXX_STANDARD 11)
@@ -145,7 +145,7 @@ set(LINK_DIR
         "/usr/local/opt/glfw/lib/"
         "/usr/local/opt/ffmpeg/lib/"
         "/usr/local/opt/boost/lib/"
-        "/usr/local/opencv/lib/"
+        "/usr/local/opt/opencv/lib/"
         "/usr/local/lib/"
         "/usr/lib/"
         "${QT}/lib/"
@@ -165,7 +165,7 @@ set(INCLUDE_DIR
         "/usr/local/opt/glfw/include/"
         "/usr/local/opt/ffmpeg/include/"
         "/usr/local/opt/boost/include/"
-        "/usr/local/opencv/include/opencv4"
+        "/usr/local/opt/opencv/include/opencv4"
         "/usr/local/include/"
         "/usr/include/"
         ${Qt5Core_INCLUDE_DIRS}
